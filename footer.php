@@ -1,6 +1,6 @@
 <footer>
         <!-- Add copy with automatic changed year + site title -->
-        <p>Copyright &copy;<?php echo date('Y'); ?> - <?php bloginfo() ;?>. Wszelkie prawa zastrzeżone.</p>
+        <p>Copyright &copy;<?php echo date('Y'); ?> - <?php bloginfo('name') ;?>. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
 
