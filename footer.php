@@ -1,5 +1,6 @@
-    <footer>
-        <h2>Footer section</h2>
+<footer>
+        <!-- Add copy with automatic changed year + site title -->
+        <p>Copyright &copy;<?php echo date('Y'); ?> - <?php bloginfo() ;?>. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
 
