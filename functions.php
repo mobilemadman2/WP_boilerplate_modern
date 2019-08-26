@@ -4,14 +4,18 @@
 function load_css () {
     wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array(), '1.0', 'all');
 }
-
 add_action( 'wp_enqueue_scripts', 'load_css' );
+
+// Adding Custom Fonts np. Google Fonts
+function add_google_fonts() {
+	wp_enqueue_style( 'google_web_fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext' );
+  }
+  add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 // Adding JS
 function load_js() {
     wp_enqueue_script( 'build.min.js', get_template_directory_uri() . '/js/min/build.min.js', array(), '1.0', 'all');
 }
-
 add_action( 'wp_enqueue_scripts', 'load_js' );
 
 // include jQuery CDN
