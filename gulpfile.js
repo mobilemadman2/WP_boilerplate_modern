@@ -12,7 +12,7 @@ function css() {
         .pipe(sass())
         .pipe(minifyCSS())
         // export main.css to css/main.css
-        .pipe(dest('./'), { sourcemaps: true })
+        .pipe(dest('./css'), { sourcemaps: true })
         .pipe(browserSync.stream());
 }
 
