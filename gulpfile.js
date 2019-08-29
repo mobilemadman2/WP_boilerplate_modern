@@ -28,7 +28,7 @@ function js() {
 function browser() {
     browserSync.init({
         // Change location for another theme np. localhost/newtheme
-        proxy: 'localhost/myfirsttheme/',
+        proxy: 'localhost/wordpress/',
         files: [
             './**/*.php'
         ]
