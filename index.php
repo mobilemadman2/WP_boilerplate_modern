@@ -22,9 +22,9 @@
                     Date:
                     <?php the_time( 'M. j, Y'); ?> |
                     Categories:
-                    <?php the_category( ','); ?>
+                    <?php the_category( ', '); ?> |
                     Tags:
-                    <?php the_tags( '', ',', '') ?>
+                    <?php the_tags( '', ', ', '') ?>
                 </p>
             </footer>
 
